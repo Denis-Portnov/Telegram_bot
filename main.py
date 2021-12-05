@@ -17,7 +17,7 @@ def welcome(message):
     markup.add(item_1, item_2)
     bot.send_message(message.chat.id, "Добро пожаловать,"
                                       " {0.first_name}!\nЯ - <b>{1.first_name}</b>,"
-                                      " Бот, сообщающий актуальную погоду в г. Санкт-Петербург."
+                                      " Бот, сообщающий актуальную погоду в г. Санкт-Петербург и г. Москва."
                      .format(message.from_user, bot.get_me()),
                      parse_mode='html', reply_markup=markup)
 
