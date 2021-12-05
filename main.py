@@ -10,7 +10,7 @@ bot = telebot.TeleBot(config.TOKEN)
 def welcome(message):
     bot.send_message(message.chat.id, "Добро пожаловать,"
                                       " {0.first_name}!\nЯ - <b>{1.first_name}</b>,"
-                                      " бот, созданный для получения зачета по ЦК."
+                                      " Бот, сообщающий актуальную погоду в г. Санкт-Петербург."
                      .format(message.from_user, bot.get_me()),
                      parse_mode='html')
 
